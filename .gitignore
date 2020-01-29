@@ -12,3 +12,14 @@ npm-debug.log
 yarn-error.log
 *.rar
 *.zip
+*.jpg
+*.png
+*.svg
+*.gif
+*.eot
+*.ttf
+*.woff
+*.woff2
+*.otf
+
+
