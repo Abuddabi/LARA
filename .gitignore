@@ -13,6 +13,7 @@ yarn-error.log
 *.rar
 *.zip
 *.jpg
+*.jpeg
 *.png
 *.svg
 *.gif
