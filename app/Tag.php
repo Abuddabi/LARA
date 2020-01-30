@@ -9,6 +9,8 @@ class Tag extends Model
 {
   use Sluggable;
 
+  protected $fillable = ['title'];
+
   public function sluggable()
   {
     return [
