@@ -1411,7 +1411,7 @@ if(this.$element.prop("multiple"))this.current(function(d){var e=[];a=[a],a.push
 		daysOfWeekDisabled: [],
 		endDate: Infinity,
 		forceParse: true,
-		format: 'mm/dd/yyyy',
+		format: 'dd/mm/yyyy',
 		keyboardNavigation: true,
 		language: 'en',
 		minViewMode: 0,
@@ -3073,7 +3073,7 @@ $(document).ready(function(){
   $('#example1').DataTable();
   $('.select2').select2();
   //Data picker
-  $('#datapicker').datapicker({
+  $('#datepicker').datepicker({
     autoclose: true
   });
   //iCheck for checkbox and radio inputs

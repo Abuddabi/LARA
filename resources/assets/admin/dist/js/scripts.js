@@ -1,8 +1,8 @@
 $(document).ready(function(){
   $('#example1').DataTable();
   $('.select2').select2();
-  //Data picker
-  $('#datapicker').datapicker({
+  //Date picker
+  $('#datepicker').datepicker({
     autoclose: true
   });
   //iCheck for checkbox and radio inputs
