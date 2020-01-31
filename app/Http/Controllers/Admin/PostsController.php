@@ -69,10 +69,9 @@ class PostsController extends Controller
     {
       $post = Post::find($id);
       $categories = Category::pluck('title', 'id')->all();
-      $selectedCategory = $post->category->id;
       $tags = Tag::pluck('title', 'id')->all();
       $selectedTags = $post->tags->pluck('id')->all();
-      return view('admin.posts.edit', compact('categories', 'selectedCategory', 'tags', 'selectedTags', 'post'));
+      return view('admin.posts.edit', compact('categories', 'tags', 'selectedTags', 'post'));
     }
 
     /**

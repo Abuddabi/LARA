@@ -43,7 +43,7 @@
             {{Form::select(
               'category_id', 
               $categories, 
-              $selectedCategory,
+              $post->getCategoryID(),
               ['class' => 'form-control select2']
             )}}
           </div>
@@ -64,7 +64,7 @@
               <div class="input-group-addon">
                 <i class="fa fa-calendar"></i>
               </div>
-              <input type="text" class="form-control pull-right" id="datepicker" value="{{$post->date}}" name="date">
+              <input type="text" class="form-control pull-right" id="datepicker" value="{{$post->date}}" name="date" autocomplete="off">
             </div>
             <!-- /.input group -->
           </div>
@@ -90,11 +90,17 @@
         </div>
         <div class="col-md-12">
           <div class="form-group">
+            <label for="exampleInputEmail1">Описание</label>
+            <textarea name="description" id="" cols="30" rows="10" class="form-control">{{$post->description}}</textarea>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
             <label for="exampleInputEmail1">Полный текст</label>
             <textarea name="content" id="" cols="30" rows="10" class="form-control">{{$post->content}}</textarea>
+          </div>
         </div>
       </div>
-    </div>
       <!-- /.box-body -->
       <div class="box-footer">
         <button class="btn btn-default">Назад</button>

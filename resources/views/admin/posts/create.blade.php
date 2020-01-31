@@ -62,7 +62,7 @@
               <div class="input-group-addon">
                 <i class="fa fa-calendar"></i>
               </div>
-              <input type="text" name="date" class="form-control pull-right" id="datepicker">
+              <input type="text" name="date" class="form-control pull-right" id="datepicker" autocomplete="off">
             </div>
             <!-- /.input group -->
           </div>
@@ -89,8 +89,14 @@
         </div>
         <div class="col-md-12">
           <div class="form-group">
+            <label for="exampleInputEmail1">Описание</label>
+            <textarea name="description" id="" cols="30" rows="10" class="form-control">{{old('description')}}</textarea>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
             <label for="exampleInputEmail1">Полный текст</label>
-            <textarea name="content" value="{{old('content')}}" id="" cols="30" rows="10" class="form-control"></textarea>
+            <textarea name="content" id="" cols="30" rows="10" class="form-control">{{old('content')}}</textarea>
           </div>
         </div>
       </div>
