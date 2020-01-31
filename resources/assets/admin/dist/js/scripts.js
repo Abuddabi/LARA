@@ -9,5 +9,8 @@ $(document).ready(function(){
   $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
     checkboxClass: 'icheckbox_minimal-blue',
     radioClass: 'iradio_minimal-blue'
-  });  
+  });
+  //CKEDITOR
+  var editor = CKEDITOR.replaceAll();
+  CKFinder.setupCKEditor(editor);
 });

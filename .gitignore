@@ -1,5 +1,7 @@
 /node_modules
 /public/hot
+/public/plugins
+/public/ckfinder
 /public/storage
 /storage/*.key
 /vendor
@@ -12,10 +14,14 @@ npm-debug.log
 yarn-error.log
 *.rar
 *.zip
+
+#все картинки
 *.jpg
 *.jpeg
 *.png
 *.svg
+
+#все шрифты
 *.gif
 *.eot
 *.ttf
