@@ -59,6 +59,8 @@ class Post extends Model
   public function edit($fields)
   {
     $this->fill($fields);
+    // Чтобы поменять slug раскомментировать след строку
+    // $this->slug = null; 
     $this->save();
   }
 
@@ -185,6 +187,35 @@ class Post extends Model
   public function getDate()
   {
     return Carbon::createFromFormat('d/m/Y', $this->date)->format('F d, Y');
+  }
+
+  public function hasPrevious()
+  {
+    return self::where('id', '<', $this->id)->max('id');
+  }
+
+  public function hasNext()
+  {
+    return self::where('id', '>', $this->id)->min('id');
+  }
+
+  public function getPrevious()
+  {
+    $postID = $this->hasPrevious();
+    
+    return self::find($postID);
+  }
+
+  public function getNext()
+  {
+    $postID = $this->hasNext();
+    
+    return self::find($postID);
+  }
+
+  public function related()
+  {
+    return self::all()->except($this->id);
   }
 
 }
