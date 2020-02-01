@@ -168,7 +168,7 @@ class Post extends Model
     if($this->category != null)
     {return $this->category->title;}
 
-    return 'Нет категории';
+    return 'Без категории';
   }
 
   public function getTagsTitles()
@@ -216,6 +216,11 @@ class Post extends Model
   public function related()
   {
     return self::all()->except($this->id);
+  }
+
+  public function hasCategory()
+  {
+    return $this->category != null ? true : false;
   }
 
 }

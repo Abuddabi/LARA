@@ -8,7 +8,9 @@
         @foreach($posts as $post)
         <article class="post">
             <div class="post-thumb">
-                <a href="{{route('post.show', $post->slug)}}"><img src="{{$post->getImage()}}" alt=""></a>
+                <a href="{{route('post.show', $post->slug)}}">
+                  <img src="{{$post->getImage()}}" alt="">
+                </a>
 
                 <a href="{{route('post.show', $post->slug)}}" class="post-thumb-overlay text-center">
                     <div class="text-uppercase text-center">View Post</div>
@@ -16,10 +18,8 @@
             </div>
             <div class="post-content">
                 <header class="entry-header text-center text-uppercase">
-                    <h6><a href="#">{{$post->category->title}}</a></h6>
-
-                    <h1 class="entry-title"><a href="{{route('post.show', $post->slug)}}">{{$post->title}}</a></h1>
-
+                  @include('partials._category', ['post' => $post])
+                  <h1 class="entry-title"><a href="{{route('post.show', $post->slug)}}">{{$post->title}}</a></h1>
 
                 </header>
                 <div class="entry-content">
