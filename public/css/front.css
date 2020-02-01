@@ -5126,6 +5126,15 @@ img.profile-image
     margin: 0px auto 20px;
     display: block;
 }
+
+/*Additional styles*/
+.page-link{
+  font-family: 'Open Sans', sans-serif;
+}
+
+img.recent{
+  max-width: 100px;
+}
 /* lg */
 @media (min-width: 1400px) {
     .show-search {
