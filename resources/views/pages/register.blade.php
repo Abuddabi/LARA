@@ -26,7 +26,7 @@
                         </div>
                         <div class="form-group">
                             <div class="col-md-12">
-                                <input type="password" class="form-control" id="password" name="password" placeholder="Password" value="{{old('password')}}">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                             </div>
                         </div>
                         <button type="submit" class="btn send-btn">Register</button>
