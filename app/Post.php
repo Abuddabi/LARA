@@ -36,6 +36,11 @@ class Post extends Model
     return $this->belongsTo(User::class, 'user_id');
   }
 
+  public function comments()
+  {
+    return $this->hasMany(Comment::class);
+  }
+
   public function tags()
   {
     return $this->belongsToMany(
@@ -238,4 +243,8 @@ class Post extends Model
     return self::orderBy('date', 'desc')->take(4)->get();
   }
 
+  public function getComments()
+  {
+    return $this->comments()->where('status', 1)->get();
+  }
 }
