@@ -22,9 +22,7 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
 
 </head>
-
 <body>
-
 <nav class="navbar main-menu navbar-default">
     <div class="container">
         <div class="menu-content">
@@ -41,8 +39,6 @@
                   <img src="/images/logo.png" alt="">
                 </a>
             </div>
-
-
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav text-uppercase">
@@ -77,6 +73,7 @@
     <!-- /.container-fluid -->
 </nav>
 
+@include('partials._statusSuccess')
 
 <!--main content start-->
   @yield('content')

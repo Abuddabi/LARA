@@ -40,7 +40,7 @@
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="{{route('subscribers.index')}}">
       <i class="fa fa-user-plus"></i> 
       <span>Подписчики</span>
     </a>
