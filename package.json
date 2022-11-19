@@ -22,7 +22,7 @@
     "sass-loader": "^7.1.0",
     "vue": "^2.5.17",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "name": "lara",
   "description": "<p align=\"center\"><img src=\"https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg\" width=\"400\"></p>",
